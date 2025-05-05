@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../icons/love-and-romance.ico" type="image/x-icon">
     <title>Poesias para o meu amor</title>
+    <script>
+        const audio = document.getElementById('audio');
+        audio.volume = 0.01;
+        audio.currentTime = 30;
+    </script>
 </head>
-
 <body>
     <header class="header">
         <section class="cor-header"></section>
@@ -17,7 +21,6 @@
         <a id="perfeicao" href="https://www.dicio.com.br/perfeicao/" target="_blank">Ellen Beatriz Araújo de Lima</a>
     </header>
     <main class="main">
-        <section id="imagem-um-poema">
             <section id="poema-um">
                 <p class="poema">Saberás que não te amo e que te amo
                     posto que de dois modos é a vida,
@@ -41,7 +44,7 @@
                         Neruda</a>
                 </p>
             </section>
-            <section id="area-poema-dois">
+            <section class="area-imagem-poema imagem-fundo-um">
                 <div class="poema-dois">
                     <p class="poema">
                         Pela luz dos olhos teus <br><br>
@@ -68,8 +71,6 @@
                     </div>
                 </div>
             </section>
-        </section>
-        <section id="imagem-dois-poema">
             <section id="poema-tres">
                 <p class="poema">
                     Românticos são poucos,<br>
@@ -93,8 +94,8 @@
                     <a href="https://pt.wikipedia.org/wiki/Vander_Lee" target="_blank" class="cor-escura">Vander Lee</a>
                 </p>
             </section>
-            <section id="area-poema-quatro">
-                <div class="poema-quatro sombra-texto">
+            <section class="area-imagem-poema imagem-fundo-dois">
+                <div class="poema-quatro">
                     <p class="poema">
                         O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha. Não maltrata,
                         não procura seus interesses, não se ira facilmente, não guarda rancor. O amor não se alegra com
@@ -105,15 +106,14 @@
                     </p>
                 </div>
             </section>
-        </section>
         <section id="declaracao">
             <h2>Eu te amo meu amor!</h2>
             <section id="fotos">
-                <div class="container" id="img1"></div>
-                <div class="container" id="img2"></div>
-                <div class="container" id="img3"></div>
-                <div class="container" id="img4"></div>
-                <div class="container" id="img5"></div>
+                <img class="container" id="img1" loading="lazy">
+                <img class="container" id="img2" loading="lazy">
+                <img class="container" id="img3" loading="lazy">
+                <img class="container" id="img4" loading="lazy">
+                <img class="container" id="img5" loading="lazy">
             </section>
         </section>
         <audio controls autoplay loop id="audio">
@@ -124,11 +124,6 @@
     <footer class="footer">
         <p>Site criado por <strong>Lucas Gabriel</strong> para o meu amor <strong>Ellen Beatriz</strong></p>
     </footer>
-    <script>
-        const audio = document.getElementById('audio');
-        audio.volume = 0.01;
-        audio.currentTime = 30;
-    </script>
 </body>
 
 </html>
