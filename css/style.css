@@ -11,6 +11,7 @@ body {
     scrollbar-width: none;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 body {
@@ -123,14 +124,17 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    
+
 }
+
 .imagem-fundo-um {
     background-image: url("../img/Imagem-de-fundo-1-mobile.jpg");
 }
+
 .imagem-fundo-dois {
     background-image: url("../img/imagem-de-fund-2-mobile.jpg");
 }
+
 .poema-dois {
     max-width: 80%;
     margin: 8% auto;
