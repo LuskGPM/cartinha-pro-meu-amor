@@ -289,11 +289,6 @@ footer {
     bottom: 0;
 }
 
-#audio {
-    position: absolute;
-    z-index: -1;
-}
-
 @media (min-width: 768px) {
     .area-imagem-poema {
         background-position: center 30%;
